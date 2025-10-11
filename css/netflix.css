@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #000;
+    background-image: url(../images/vimal-s-cPGMrfAuUSg-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+header {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: brown;
+    font-size: 1.2rem;
+}
+
+.logo span {
+    color: rgb(10, 10, 211);
+}
+
+.logo img {
+    height: 50px;
+    padding-right: 1rem;
+}
+
+nav a {
+    padding: 0 1rem;
+    color: #7F00FF;
+    transition: 0.3s;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: brown;
+}
+
+/* ===== CONTAINER PRINCIPAL ===== */
+.container {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.image img {
+    max-width: 400px;
+    box-shadow: 1px 1px 8px 1px rgba(255, 255, 255, 0.6);
+}
+
+.descricao {
+    color: #fff;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.descricao h1 {
+    font-size: 2.4rem;
+}
+
+.descricao h2 {
+    font-size: 2.3rem;
+    color: #7F00FF;
+}
+
+.descricao p {
+    font-size: 1.2rem;
+    color: #7F00FF;
+}
+
+.button {
+    display: flex;
+    height: 5rem;
+    border-radius: 8px;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #7F00FF;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #7F00FF;
+    color: rgb(255, 255, 255);
+}
+
+/* ===== REGRAS ===== */
+.regras {
+    color: #fff;
+    line-height: 1.8rem;
+    margin: 2% 6%;
+    background-color: rgba(0, 255, 255, 0.04);
+    border-radius: 10px;
+    padding: 1rem 0 1rem 4%;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 760px) {
+    nav {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image img {
+        width: 100%;
+        max-width: 400px;
+        height: 400px;
+    }
+
+    .descricao {
+        width: 80%;
+        height: auto;
+    }
+
+    .descricao h1 {
+        font-size: 2rem;
+    }
+
+    .descricao h2 {
+        font-size: 1.8rem;
+    }
+
+    .descricao p {
+        font-size: 1rem;
+    }
+
+    .button {
+        font-size: 1.4rem;
+        height: 3rem;
+    }
+}
